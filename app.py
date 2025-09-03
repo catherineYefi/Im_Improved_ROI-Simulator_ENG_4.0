@@ -41,12 +41,14 @@ PREMIUM_CSS = """
     --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
 }
+
 /* Enhanced Global Styles */
 .gradio-container {
     max-width: 1400px !important;
     margin: 0 auto !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
+
 /* Premium Header with Animation */
 .premium-header {
     background: var(--gradient);
@@ -57,6 +59,7 @@ PREMIUM_CSS = """
     position: relative;
     overflow: hidden;
 }
+
 .premium-header::before {
     content: '';
     position: absolute;
@@ -67,10 +70,12 @@ PREMIUM_CSS = """
     background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
     animation: float 8s ease-in-out infinite;
 }
+
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-30px) rotate(180deg); }
 }
+
 .header-content {
     position: relative;
     z-index: 2;
@@ -80,22 +85,26 @@ PREMIUM_CSS = """
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .header-title {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .header-subtitle {
     opacity: 0.9;
     font-size: 1.2rem;
     font-weight: 400;
 }
+
 .header-stats {
     text-align: right;
     font-size: 1rem;
     opacity: 0.9;
 }
+
 /* Enhanced Profile Cards */
 .profile-grid {
     display: grid;
@@ -103,6 +112,7 @@ PREMIUM_CSS = """
     gap: 1.5rem;
     margin: 2rem 0;
 }
+
 .profile-card {
     background: var(--surface);
     border: 2px solid var(--border);
@@ -115,6 +125,7 @@ PREMIUM_CSS = """
     overflow: hidden;
     box-shadow: var(--shadow);
 }
+
 .profile-card::before {
     content: '';
     position: absolute;
@@ -125,41 +136,49 @@ PREMIUM_CSS = """
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
     transition: left 0.5s;
 }
+
 .profile-card:hover::before {
     left: 100%;
 }
+
 .profile-card:hover {
     border-color: var(--primary);
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
 .profile-card.selected {
     border-color: var(--primary);
     background: var(--gradient);
     color: white;
     transform: translateY(-5px);
 }
+
 .profile-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     display: block;
 }
+
 .profile-name {
     font-weight: 700;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+
 .profile-revenue {
     font-size: 1rem;
     opacity: 0.8;
     font-weight: 500;
 }
+
 .profile-description {
     font-size: 0.9rem;
     opacity: 0.7;
     margin-top: 0.5rem;
     line-height: 1.4;
 }
+
 /* Enhanced KPI Cards */
 .kpi-grid {
     display: grid;
@@ -167,6 +186,7 @@ PREMIUM_CSS = """
     gap: 2rem;
     margin: 2rem 0;
 }
+
 .kpi-card {
     background: var(--surface);
     border-radius: var(--radius);
@@ -177,9 +197,11 @@ PREMIUM_CSS = """
     overflow: hidden;
     transition: transform 0.2s ease;
 }
+
 .kpi-card:hover {
     transform: translateY(-3px);
 }
+
 .kpi-card::before {
     content: '';
     position: absolute;
@@ -189,6 +211,7 @@ PREMIUM_CSS = """
     height: 4px;
     background: var(--gradient);
 }
+
 .kpi-label {
     font-size: 1rem;
     color: var(--text-muted);
@@ -197,26 +220,31 @@ PREMIUM_CSS = """
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 .kpi-value {
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
+
 .kpi-note {
     font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.4;
 }
+
 .kpi-card.success .kpi-value { color: var(--success); }
 .kpi-card.warning .kpi-value { color: var(--warning); }
 .kpi-card.error .kpi-value { color: var(--error); }
+
 /* AI Insight Cards */
 .ai-insights-grid {
     display: grid;
     gap: 1.5rem;
     margin: 2rem 0;
 }
+
 .ai-insight-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -226,6 +254,7 @@ PREMIUM_CSS = """
     position: relative;
     overflow: hidden;
 }
+
 .ai-insight-card::before {
     content: '🤖';
     position: absolute;
@@ -234,25 +263,30 @@ PREMIUM_CSS = """
     font-size: 2rem;
     opacity: 0.3;
 }
+
 .ai-insight-header {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
+
 .ai-insight-icon {
     font-size: 1.5rem;
     margin-right: 0.75rem;
 }
+
 .ai-insight-title {
     font-weight: 700;
     font-size: 1.2rem;
     margin: 0;
 }
+
 .ai-insight-description {
     line-height: 1.6;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
+
 .ai-confidence {
     background: rgba(255,255,255,0.2);
     padding: 0.5rem 1rem;
@@ -261,6 +295,7 @@ PREMIUM_CSS = """
     font-size: 0.9rem;
     font-weight: 600;
 }
+
 /* Country Comparison Enhanced */
 .country-comparison {
     background: var(--surface);
@@ -269,11 +304,13 @@ PREMIUM_CSS = """
     margin: 2rem 0;
     box-shadow: var(--shadow);
 }
+
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
+
 .comparison-table th {
     background: var(--gradient);
     color: white;
@@ -281,13 +318,16 @@ PREMIUM_CSS = """
     text-align: left;
     font-weight: 600;
 }
+
 .comparison-table td {
     padding: 1rem;
     border-bottom: 1px solid var(--border);
 }
+
 .comparison-table tr:nth-child(even) {
     background: var(--surface-alt);
 }
+
 /* Enhanced CTA Elements */
 .premium-cta {
     background: var(--gradient-gold);
@@ -299,6 +339,7 @@ PREMIUM_CSS = """
     position: relative;
     overflow: hidden;
 }
+
 .premium-cta::before {
     content: '⭐';
     position: absolute;
@@ -308,20 +349,24 @@ PREMIUM_CSS = """
     right: 2rem;
     animation: pulse 2s infinite;
 }
+
 @keyframes pulse {
     0%, 100% { opacity: 0.1; transform: scale(1); }
     50% { opacity: 0.3; transform: scale(1.1); }
 }
+
 .cta-title {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
 }
+
 .cta-subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
     margin-bottom: 2rem;
 }
+
 .cta-button-enhanced {
     background: white !important;
     color: var(--primary) !important;
@@ -336,10 +381,12 @@ PREMIUM_CSS = """
     display: inline-block !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
 }
+
 .cta-button-enhanced:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
 }
+
 /* Real-time notifications */
 .notification-popup {
     position: fixed;
@@ -354,14 +401,17 @@ PREMIUM_CSS = """
     animation: slideInRight 0.5s ease, fadeOut 0.5s ease 4s;
     min-width: 300px;
 }
+
 @keyframes slideInRight {
     from { transform: translateX(100%); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
 }
+
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
 /* Mobile responsiveness enhanced */
 @media (max-width: 768px) {
     .header-title { font-size: 2rem; }
@@ -370,6 +420,7 @@ PREMIUM_CSS = """
     .header-content { flex-direction: column; text-align: center; }
     .premium-header { padding: 2rem 1rem; }
 }
+
 /* Loading states */
 .loading-spinner {
     border: 3px solid var(--border);
@@ -380,6 +431,7 @@ PREMIUM_CSS = """
     animation: spin 1s linear infinite;
     margin: 2rem auto;
 }
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -1882,7 +1934,7 @@ class EnhancedLeadEngine:
 # MAIN APPLICATION - ENHANCED
 # =========================
 
-def create_visatier_5_app():
+def create_premium_immigration_app():
     """Create the revolutionary VisaTier 5.0 application"""
     
     with gr.Blocks(theme=PREMIUM_THEME, css=PREMIUM_CSS, title="VisaTier 5.0") as app:
