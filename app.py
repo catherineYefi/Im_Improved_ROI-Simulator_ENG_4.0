@@ -41,14 +41,12 @@ PREMIUM_CSS = """
     --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
 }
-
 /* Enhanced Global Styles */
 .gradio-container {
     max-width: 1400px !important;
     margin: 0 auto !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
-
 /* Premium Header with Animation */
 .premium-header {
     background: var(--gradient);
@@ -59,7 +57,6 @@ PREMIUM_CSS = """
     position: relative;
     overflow: hidden;
 }
-
 .premium-header::before {
     content: '';
     position: absolute;
@@ -70,12 +67,10 @@ PREMIUM_CSS = """
     background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
     animation: float 8s ease-in-out infinite;
 }
-
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-30px) rotate(180deg); }
 }
-
 .header-content {
     position: relative;
     z-index: 2;
@@ -85,26 +80,22 @@ PREMIUM_CSS = """
     flex-wrap: wrap;
     gap: 2rem;
 }
-
 .header-title {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 .header-subtitle {
     opacity: 0.9;
     font-size: 1.2rem;
     font-weight: 400;
 }
-
 .header-stats {
     text-align: right;
     font-size: 1rem;
     opacity: 0.9;
 }
-
 /* Enhanced Profile Cards */
 .profile-grid {
     display: grid;
@@ -112,7 +103,6 @@ PREMIUM_CSS = """
     gap: 1.5rem;
     margin: 2rem 0;
 }
-
 .profile-card {
     background: var(--surface);
     border: 2px solid var(--border);
@@ -125,7 +115,6 @@ PREMIUM_CSS = """
     overflow: hidden;
     box-shadow: var(--shadow);
 }
-
 .profile-card::before {
     content: '';
     position: absolute;
@@ -136,49 +125,41 @@ PREMIUM_CSS = """
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
     transition: left 0.5s;
 }
-
 .profile-card:hover::before {
     left: 100%;
 }
-
 .profile-card:hover {
     border-color: var(--primary);
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
 .profile-card.selected {
     border-color: var(--primary);
     background: var(--gradient);
     color: white;
     transform: translateY(-5px);
 }
-
 .profile-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
     display: block;
 }
-
 .profile-name {
     font-weight: 700;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
-
 .profile-revenue {
     font-size: 1rem;
     opacity: 0.8;
     font-weight: 500;
 }
-
 .profile-description {
     font-size: 0.9rem;
     opacity: 0.7;
     margin-top: 0.5rem;
     line-height: 1.4;
 }
-
 /* Enhanced KPI Cards */
 .kpi-grid {
     display: grid;
@@ -186,7 +167,6 @@ PREMIUM_CSS = """
     gap: 2rem;
     margin: 2rem 0;
 }
-
 .kpi-card {
     background: var(--surface);
     border-radius: var(--radius);
@@ -197,11 +177,9 @@ PREMIUM_CSS = """
     overflow: hidden;
     transition: transform 0.2s ease;
 }
-
 .kpi-card:hover {
     transform: translateY(-3px);
 }
-
 .kpi-card::before {
     content: '';
     position: absolute;
@@ -211,7 +189,6 @@ PREMIUM_CSS = """
     height: 4px;
     background: var(--gradient);
 }
-
 .kpi-label {
     font-size: 1rem;
     color: var(--text-muted);
@@ -220,31 +197,26 @@ PREMIUM_CSS = """
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
 .kpi-value {
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
-
 .kpi-note {
     font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.4;
 }
-
 .kpi-card.success .kpi-value { color: var(--success); }
 .kpi-card.warning .kpi-value { color: var(--warning); }
 .kpi-card.error .kpi-value { color: var(--error); }
-
 /* AI Insight Cards */
 .ai-insights-grid {
     display: grid;
     gap: 1.5rem;
     margin: 2rem 0;
 }
-
 .ai-insight-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -254,7 +226,6 @@ PREMIUM_CSS = """
     position: relative;
     overflow: hidden;
 }
-
 .ai-insight-card::before {
     content: '🤖';
     position: absolute;
@@ -263,30 +234,25 @@ PREMIUM_CSS = """
     font-size: 2rem;
     opacity: 0.3;
 }
-
 .ai-insight-header {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
-
 .ai-insight-icon {
     font-size: 1.5rem;
     margin-right: 0.75rem;
 }
-
 .ai-insight-title {
     font-weight: 700;
     font-size: 1.2rem;
     margin: 0;
 }
-
 .ai-insight-description {
     line-height: 1.6;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
-
 .ai-confidence {
     background: rgba(255,255,255,0.2);
     padding: 0.5rem 1rem;
@@ -295,7 +261,6 @@ PREMIUM_CSS = """
     font-size: 0.9rem;
     font-weight: 600;
 }
-
 /* Country Comparison Enhanced */
 .country-comparison {
     background: var(--surface);
@@ -304,13 +269,11 @@ PREMIUM_CSS = """
     margin: 2rem 0;
     box-shadow: var(--shadow);
 }
-
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
-
 .comparison-table th {
     background: var(--gradient);
     color: white;
@@ -318,16 +281,13 @@ PREMIUM_CSS = """
     text-align: left;
     font-weight: 600;
 }
-
 .comparison-table td {
     padding: 1rem;
     border-bottom: 1px solid var(--border);
 }
-
 .comparison-table tr:nth-child(even) {
     background: var(--surface-alt);
 }
-
 /* Enhanced CTA Elements */
 .premium-cta {
     background: var(--gradient-gold);
@@ -339,7 +299,6 @@ PREMIUM_CSS = """
     position: relative;
     overflow: hidden;
 }
-
 .premium-cta::before {
     content: '⭐';
     position: absolute;
@@ -349,24 +308,20 @@ PREMIUM_CSS = """
     right: 2rem;
     animation: pulse 2s infinite;
 }
-
 @keyframes pulse {
     0%, 100% { opacity: 0.1; transform: scale(1); }
     50% { opacity: 0.3; transform: scale(1.1); }
 }
-
 .cta-title {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
 }
-
 .cta-subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
     margin-bottom: 2rem;
 }
-
 .cta-button-enhanced {
     background: white !important;
     color: var(--primary) !important;
@@ -381,12 +336,10 @@ PREMIUM_CSS = """
     display: inline-block !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
 }
-
 .cta-button-enhanced:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
 }
-
 /* Real-time notifications */
 .notification-popup {
     position: fixed;
@@ -401,17 +354,14 @@ PREMIUM_CSS = """
     animation: slideInRight 0.5s ease, fadeOut 0.5s ease 4s;
     min-width: 300px;
 }
-
 @keyframes slideInRight {
     from { transform: translateX(100%); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
 }
-
 @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
 }
-
 /* Mobile responsiveness enhanced */
 @media (max-width: 768px) {
     .header-title { font-size: 2rem; }
@@ -420,7 +370,6 @@ PREMIUM_CSS = """
     .header-content { flex-direction: column; text-align: center; }
     .premium-header { padding: 2rem 1rem; }
 }
-
 /* Loading states */
 .loading-spinner {
     border: 3px solid var(--border);
@@ -431,7 +380,6 @@ PREMIUM_CSS = """
     animation: spin 1s linear infinite;
     margin: 2rem auto;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -460,7 +408,6 @@ PREMIUM_THEME = gr.themes.Soft(
 @dataclass
 class UserProfile:
     """Represents an entrepreneur persona using the simulator.
-
     Attributes:
         id: Unique identifier for the profile.
         name: Display name of the persona.
@@ -488,7 +435,6 @@ class UserProfile:
 @dataclass
 class CountryData:
     """Structured metrics describing a potential destination country.
-
     Attributes:
         name: Country name.
         corp_tax: Corporate tax rate as a decimal.
@@ -765,7 +711,6 @@ ENHANCED_COUNTRIES = {
 
 class AIInsightEngine:
     """Engine that crafts personalized AI insights for ROI simulations.
-
     Attributes:
         insight_templates: Persona-specific message templates keyed by persona id.
         risk_mitigation_strategies: Mapping of risk types to mitigation tactics.
@@ -774,10 +719,8 @@ class AIInsightEngine:
     
     def __init__(self):
         """Initialize insight templates and supporting lookup tables.
-
         Returns:
             None
-
         Side Effects:
             Populates in-memory templates and strategy mappings used during
             insight generation.
@@ -839,16 +782,13 @@ class AIInsightEngine:
     
     def generate_personalized_insight(self, profile: UserProfile, country: CountryData, result: Dict) -> Dict:
         """Generate AI-powered insights for a given profile and country.
-
         Args:
             profile: The active user's profile information.
             country: Destination country data being evaluated.
             result: Output from the ROI calculator containing financial metrics.
-
         Returns:
             A dictionary containing the generated insight text, confidence
             score, tier, key factors and action items.
-
         Side Effects:
             Logs an error message to stdout if insight generation fails.
         """
@@ -1041,7 +981,6 @@ class AIInsightEngine:
 
 class AdvancedROICalculator:
     """Performs ROI calculations with advanced analytics and simulations.
-
     Attributes:
         monte_carlo_iterations: Number of simulations for Monte Carlo analysis.
         confidence_intervals: Confidence interval levels used in reporting.
@@ -1049,7 +988,6 @@ class AdvancedROICalculator:
     
     def __init__(self):
         """Initialize calculator defaults for Monte Carlo and confidence levels.
-
         Returns:
             None
         """
@@ -1074,7 +1012,6 @@ class AdvancedROICalculator:
         discount_rate: float
     ) -> Dict:
         """Calculate ROI metrics with Monte Carlo, sensitivity, and scenarios.
-
         Args:
             profile: Active user profile used for multipliers.
             country: Destination country configuration.
@@ -1089,12 +1026,10 @@ class AdvancedROICalculator:
             success_probability: Probability of achieving projected results (0-100).
             time_horizon: Time horizon in months for the projection.
             discount_rate: Annual discount rate percentage for NPV calculations.
-
         Returns:
             A dictionary containing base metrics, Monte Carlo results,
             sensitivity analyses, scenario comparisons, and risk/opportunity
             scores.
-
         Side Effects:
             Logs an error to stdout and returns fallback metrics on failure.
         """
@@ -1535,16 +1470,13 @@ class AdvancedChartGenerator:
     @staticmethod
     def create_comprehensive_dashboard(result: Dict, country_name: str, profile_name: str) -> go.Figure:
         """Create an interactive dashboard visualizing ROI analysis.
-
         Args:
             result: Output dictionary from the ROI calculator.
             country_name: Name of the country being evaluated.
             profile_name: Name of the user's profile.
-
         Returns:
             A Plotly ``Figure`` object containing multiple subplots with cash
             flow, risk and scenario information.
-
         Side Effects:
             Uses random sampling to mock Monte Carlo distributions when
             provided with summary statistics.
@@ -1785,11 +1717,9 @@ class AdvancedChartGenerator:
             fig = go.Figure()
             fig.add_annotation(text=f"Heatmap error: {str(e)}", x=0.5, y=0.5)
             return fig
-
 # =========================
 # LEAD GENERATION & CRM SYSTEM
 # =========================
-
 class EnhancedLeadEngine:
 """Creates personalized offers and manages lead-generation logic."""
     def __init__(self):
@@ -1807,23 +1737,26 @@ class EnhancedLeadEngine:
         
         self.pricing_tiers = {
             'starter': {'base_price': 497, 'max_discount': 0.8},
-            'standard': {'base_price': 1997, 'max_discount': 0.6},
-            'premium': {'base_price': 4997, 'max_discount': 0.5},
-            'vip': {'base_price': 9997, 'max_discount': 0.3}
+            'standard': {'base_price': 1997, 'max_discount': 0.6},  # mid tier
+            'premium': {'base_price': 4997, 'max_discount': 0.5},  # high tier
+            'vip': {'base_price': 9997, 'max_discount': 0.3}  # elite tier
         }
     
-    def generate_dynamic_offer(self, result: Dict, profile: UserProfile, country: CountryData) -> Dict:
+    def generate_dynamic_offer(
+        self,
+        result: Dict,  # ROI metrics
+        profile: UserProfile,  # user persona
+        country: CountryData,  # country data
+    ) -> Dict:
         """Generate a tailored offer for the user based on analysis results.
 
         Args:
             result: ROI calculation output containing financial metrics.
-            profile: The user's persona driving discount logic.
+            profile: The user\'s persona driving discount logic.
             country: Destination country information affecting pricing.
-
         Returns:
             A dictionary describing the offer tier, pricing, incentives and
             messaging suitable for display to the user.
-
         Side Effects:
             Logs an error message if offer generation fails.
         """
@@ -2082,11 +2015,9 @@ class EnhancedLeadEngine:
             'timeline': "Delivered within 24 hours",
             'payment_options': ["One-time payment: $997", "3-month plan: $332/month"]
         }
-
 # =========================
 # MAIN APPLICATION - ENHANCED
 # =========================
-
 def create_premium_immigration_app():
     """Create the revolutionary VisaTier 5.0 application"""
     
@@ -2927,28 +2858,22 @@ def create_premium_immigration_app():
         """)
     
     return app
-
 # =========================
 # ADDITIONAL UTILITY FUNCTIONS
 # =========================
-
 def generate_pdf_report(result: Dict, profile: UserProfile, country: CountryData) -> str:
     """Generate comprehensive PDF report (placeholder for actual implementation)"""
     return f"PDF report generated for {profile.name} -> {country.name} migration analysis"
-
 def send_to_crm(email: str, profile: str, result: Dict) -> bool:
     """Send lead data to CRM system (placeholder)"""
     print(f"CRM: New lead {email} - {profile} - ROI: {result.get('roi', 0):.1f}%")
     return True
-
 def schedule_consultation(email: str, profile: str, country: str, roi: float) -> str:
     """Schedule consultation via Calendly API (placeholder)"""
     return f"https://calendly.com/visatier/consultation?email={email}&profile={profile}"
-
 # =========================
 # MAIN EXECUTION
 # =========================
-
 if __name__ == "__main__":
     # Create and launch the enhanced application
     app = create_premium_immigration_app()
